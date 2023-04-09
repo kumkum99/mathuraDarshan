@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janmashtmi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+ <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> 
+ <script src="main.js"></script>
+ <style>
+  
+  
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+
+  }
+  .container .box{
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    filter: grayscale(1);
+    border: 3px solid black;
+  }
+  .container .box:hover{
+    filter: grayscale(0);
+  }
+  .container .box video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*media*/
+ @media (max-width:768px){
+  .container .box{
+    width:450px;
+    margin-top: 50px;
+
+  }
+ }
+ 
+ </style>
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navvar-light py-lg-3 py-3">
+           
+              <a class="navbar-brand" href="#" id="gayab">Mathura दर्शन</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Places
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: darkkhaki;">
+                      <li><a class="dropdown-item" href="mathura.html">Mathura</a></li>
+                      <li><a class="dropdown-item" href="Vrindavan.html">Vrindavan</a></li>
+                      <li><a class="dropdown-item" href="Nandgav.html">Nand gav</a></li>
+                      <li><a class="dropdown-item" href="barsana.html">Barsana</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gallery
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: darkkhaki;">
+                      <li><a class="dropdown-item" href="photo.html">Photos</a></li>
+                      <li><a class="dropdown-item" href="Videos.html">Videos</a></li>
+                      </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Events
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: darkkhaki;">
+                          <li><a class="dropdown-item" href="Holi.html">Holi</a></li>
+                          <li><a class="dropdown-item" href="Janmashtmi.html">Janmashtami</a></li>
+                          </ul>
+                          </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="location.html">location</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="Contact.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+           
+          </nav>
+        </section>
+        <div class="container">
+          <h1 style="text-align:center; color: orangered; text-shadow: 2px 2px 2px blue; padding-top:50px;"> Janmashtami Festival</h1>
+          <p style="color: blue; font-size: 20px; text-align: justify;">Celebrated in the month of Shravan, Krishna Janmashtami falls on the eight-day of Krishna paksha. Usually falling in the month of August or September in the gregorian calendarCelebrated to commemorate Lord Krishna's birth, ceremonies and prayer services are held during midnight in the temples dedicated to Lord Krishna. Thousands of pilgrims visit Mathura on this day. Dahi Handi celebrations are the high point of the festival.The celebrations start 10 days prior to the day of Birth in Vrindavan. Rasleelas and plays on the life of Krishna and even scenes from the epic Mahabharata of which Lord Krishna was an indispensable part are performed by professional artists on the occasion of Janmashtami.Janamashtmi is the best time to visit Vrindavan only if you are not afraid of being pushed around in a huge crowd, as devotees from all over the country throng the town to pay homage to Lord Krishna during this time.Celebrated to commemorate Lord Krishna's birth, ceremonies and prayer services are held during midnight in the temples dedicated to Lord Krishna. Thousands of pilgrims visit Mathura on this day. Dahi Handi celebrations are the high point of the festival.</p>
+       </div>
+       <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img src="Images/jn1.jpg" width="250px" height="150px" id="pr">
+          </div>
+          <div class="col">
+            <img src="Images/jn2.jpg" width="250px" height="150px" id="pr">
+          </div>
+          <div class="col">
+            <img src="Images/jn3.jpg" width="250px" height="150px" id="pr">
+          </div>
+       
+          <div class="col">
+            <img src="Images/jnm.jpg" width="250px" height="150px" id="pr">
+          </div>
+          <div class="col">
+            <img src="Images/matki1.jpg" width="250px" height="150px" id="pr">
+          </div>
+          <div class="col">
+            <img src="Images/jn4.jpg" width="250px" height="150px" id="pr">
+          </div>
+          <div class="col">
+            <img src="Images/j1.jfif" width="250px" height="150px" id="pr">
+          </div>
+          <div class="col">
+            <img src="Images/j2.gif" width="250px" height="150px" id="pr">
+          </div>
+          <div class="col">
+            <img src="Images/img23.jpg" width="250px" height="150px" id="pr">
+          </div>
+        </div>
+      </div>
+     
+        <div class="container">
+        
+       
+                  <div class="box">
+
+            <video src="Images/5.MOV" loop class="clip" ></video>
+          </div>
+        
+          <div class="box">
+                       <video src="Images/aarati.mp4" loop  class="clip"></video>
+          </div>
+       
+          <div class="box">
+                       <video src="Images/16.mp4" loop class="clip"></video>
+          </div>
+        
+          <div class="box">
+            <video src="Images/25.mp4" loop class="clip" ></video>
+         
+        </div>
+        </div>
+        <script>
+const clip = document.querySelectorAll('.clip');
+for (let i=0; i< clip.length; i++){
+  clip[i].addEventListener('mouseenter',function(e){
+    clip[i].play()
+  });
+  clip[i].addEventListener('mouseout',function(e){
+    clip[i].pause()
+  });
+}
+        </script>
+        <center><button style="background-color: orange;color: blue; margin-top: 20px;"><a href="https://youtu.be/rg6zFY5et5k"> Learn More</a></button></center>
+        <footer style=" text-align: center; background-image: linear-gradient(to right, #417cbb,#e48a15); margin-top: 100px; color:azure">
+          <p style="font-size: 20px;"> Created by Kumkum and Deeksha<br> &copy; Kumkum and Deeksha all rights reserved..<p>
+        </footer>
+</body>
+</html>
