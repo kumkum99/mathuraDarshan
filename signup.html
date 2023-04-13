@@ -13,47 +13,61 @@
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> 
  <script src="main.js"></script>
+ <style>
+  body{
+    background-color: #b7b7b8;
+  }
+ </style>
 </head>
 <body>
     <div class="container">
+    
        
         <form style="background-image: linear-gradient(to right, #417cbb,#e48a15); padding: 50px; margin: 40px; margin-left: 200px; margin-right: 200px; margin-bottom: 50px;">
     <div class="row g-3">
+      <h3 style="text-align: center; color: aliceblue;">Sign Up </h3>
         <div class="col">
+        
             <label for="inputname" class="form-label">First name</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" required>
         </div>
         <div class="col">
             <label for="inputname" class="form-label">Last name</label>
-          <input type="text" class="form-control" >
+          <input type="text" class="form-control" required>
         </div>
       </div>
       <div class="row g-3">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <input type="email" class="form-control" id="inputEmail4" required>
         </div>
         <div class="col-md-6">
             <label for="inputMobilenumber" class="form-label">Mobile number</label>
-            <input type="text" class="form-control" id="inputAddress2" >
+            <input type="text" class="form-control" id="inputAddress2" pattern="[0-9]{10}"maxlength="10" required >
           </div>
         </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
+        <div class="row g-3">
+          <div class="col">
+              <label for="inputname" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" required>
+          </div>
+          <div class="col">
+              <label for="inputname" class="form-label">Confirm Password</label>
+            <input type="password" name="password" class="form-control" required >
+          </div>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label" style="color: aliceblue;">Address</label>
-            <textarea class="form-control" id="exampleInputPassword1"></textarea> 
+            <textarea class="form-control" id="exampleInputPassword1" required></textarea> 
           </div>
           <div class="row g-3">
         <div class="col-md-6">
           <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity">
+          <input type="text" class="form-control" id="inputCity" required>
         </div>
         <div class="col-md-4">
           <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
+          <select id="inputState" class="form-select" required>
             <option selected>Select</option>
             <option value="Andhra Pradesh">Andhra Pradesh</option>
             <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -92,12 +106,102 @@
             <option value="Uttarakhand">Uttarakhand</option>
             <option value="West Bengal">West Bengal</option>
             </select>
+          </div>
         </div>
-        </div>
-        <div class="col-md-2">
+               
+         <div class="col-md-2">
           <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip"  maxlength="6">
+          <input type="text" class="form-control" id="inputZip"  pattern="[0-9]{6}"  maxlength="6" required>
         </div>
+       <h3 style="text-align: center; color:aliceblue;">Tour</h3>
+
+        <div class="row g-2">
+          <div class="col-4">
+<p style="color: rgb(247, 240, 237);">Mathura</p>
+<input type="checkbox" name="chk1" size="50">
+<label>Janambhumi</label> <br>
+<input type="checkbox" name="chk2" size="50">
+<label>Goverdhan Temple</label> <br>
+<input type="checkbox" name="chk3" size="50">
+<label>Dwarikadhish Temple</label> <br>
+<input type="checkbox" name="chk3" size="50">
+<label>Vishram Ghat</label> 
+
+  <p style="color: rgb(247, 240, 237);">Vrindavan</p>
+  <input type="checkbox" name="chk3" size="50">
+  <label>Vashno Dham</label> <br>
+  <input type="checkbox" name="chk1" size="50">
+  <label>Banke bihari Temple</label> <br>
+  <input type="checkbox" name="chk2" size="50">
+  <label>Prem Mandir</label>  <br>
+  <input type="checkbox" name="chk3" size="50">
+  <label>Iskon Temple</label>
+  </div>
+  
+
+ <br>
+<div class="col">
+  <p style="color: rgb(247, 240, 237);">Barsana</p>
+  <input type="checkbox" name="chk2" size="50">
+<label>Kirti Temple</label> <br>
+  <input type="checkbox" name="chk1" size="50">
+<label>Radha rani Temple</label> <br> 
+<input type="checkbox" name="chk3" size="50">
+<label>Rangeeli Mahal</label> <br>
+<input type="checkbox" name="chk3" size="50">
+<label>Radha Kushal Temple</label>
+</div> <br>
+<div class="col">
+  <p style="color: rgb(247, 240, 237);">Nand gav</p>
+  <input type="checkbox" name="chk2" size="50">
+<label>Kokilavan</label> <br>
+  <input type="checkbox" name="chk1" size="50">
+<label>Nand bavan Temple</label> <br>
+<input type="checkbox" name="chk3" size="50">
+<label>Vrinda kund Temple</label> <br>
+<input type="checkbox" name="chk3" size="50">
+<label>Shri Tej Kadamb</label>
+</div> <br>
+<h3 style="text-align: center; color:aliceblue;">Booking</h3><br>
+<div class="row g-2">
+<div class="col-md-4">
+  <label for="inputState" class="form-label">Duration</label>
+  <select id="inputState" class="form-select">
+    <option selected>Choose</option>
+    <option value="Andhra Pradesh">1Day</option>
+    <option value="Andaman and Nicobar Islands">2Days</option>
+    <option value="Arunachal Pradesh">3Days</option>
+    <option value="Assam">4Days</option>
+    <option value="Bihar">5Days</option>
+    <option value="Chandigarh">10Days</option>
+    </select>
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Members</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose</option>
+        <option value="Andhra Pradesh">Single</option>
+        <option value="Andaman and Nicobar Islands">Couple</option>
+        <option value="Arunachal Pradesh">Family</option>
+        <option value="Assam">Friends</option>
+        </select>
+        </div>
+       </div><br>
+   <div class="col">
+    <lable>Hotel</lable><br>
+<input type="radio" name="rdo">
+<label>yes</label>
+<input type="radio" name="rdo">
+<label>No</label>
+  
+   <div class="col">
+    <lable>Convence</lable><br>
+<input type="radio" name="rd">
+<label>yes</label>
+<input type="radio" name="rd">
+<label>No</label>
+   </div><br>
+
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -108,6 +212,7 @@
         </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary" style="margin-left: 180px;">Sign up</button>
+          <button type="submit" class="btn btn-primary" style="margin-right:80px"><a href="login.html">Login</a></button>
         </div>
       </form>
       </div>
