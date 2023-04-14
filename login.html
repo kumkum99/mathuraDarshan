@@ -13,10 +13,28 @@
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> 
  <script src="main.js"></script>
+ <style>
+.container{
+  background-image: linear-gradient(to right, #417cbb,#e48a15);
+  padding: 50px !important; 
+  margin-top: 40px !important; 
+  max-width: 800px;
+  margin-bottom: -50px !important;
+
+}
+
+  @media (max-width:768px){
+    .container{
+      padding: 10px !important;
+      margin: 10px !important;
+
+    }
+  }
+ </style>
 </head>
 <body>
     <div class="container">
-    <form style="background-image: linear-gradient(to right, #417cbb,#e48a15); padding: 50px; margin: 40px; margin-left: 200px; margin-right: 200px; margin-bottom: -50px;">
+    <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -30,10 +48,12 @@
           <input type="checkbox" class="form-check-input" id="chk">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <button type="submit" class="btn btn-primary" id="sub" style="margin-left: 180px;">Submit</button>
+        <button type="submit" class="btn btn-primary" id="sub" style="margin-left: 180px;"><a href="booking.html">Login</a></button>
         <p style="text-align: center; padding-top:20px;">don't have a Account?</p>
         <hr>
-        <button type="submit" class="btn btn-primary" style="margin-left: 180px;" > <a href="signup.html">Sign up</a> </button>
+      
+        <button type="submit" class="btn btn-primary" style="margin-left: 180px;"><a href="signup.html">Sign up</a></button>
+        <button type="submit" class="btn btn-primary" id="sub" style="margin-left: 10px;"><a href="booking.html">Book with Us</a></button>
       </form>
     </div>
 </div>
